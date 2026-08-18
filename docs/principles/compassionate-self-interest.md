@@ -5,6 +5,8 @@ Related: Hayek [#20](https://github.com/diagonalcounty/waloyo/issues/20), evalua
 
 The couple lives **inside** an economy, not above it. Townsfolk already trade. The player’s job is to add value — improve their own lives in a way that does not require someone else to lose.
 
+Why it matters: they have to care for **each other**, and they know a season is coming when market work falls mainly on one of them ([household-stakes.md](household-stakes.md)).
+
 ---
 
 ## Three stances
