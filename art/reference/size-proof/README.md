@@ -1,7 +1,16 @@
 # Size proof
 
-Open the **local** file in a browser at **100% zoom** (double-click `index.html`, or `open art/reference/size-proof/index.html`). GitHub’s file view will not load the pictures.
+Open the **local** file in a browser at **100% zoom**:
 
-Same stills at Civilopedia, portrait, icon, and hex-token sizes. This is a scale check, not Unciv running.
+`/Users/jacobroecker/code/waloyo/art/reference/size-proof/index.html`
 
-Images live in `stills/` next to this page so `file://` browsers can read them (parent-folder `../` paths are blocked).
+GitHub’s file view will not load the pictures.
+
+Each cell is a pre-cropped square on the **same dark field**. Pedia cells have more headroom; hex tokens are packed tighter. Parchment, peach, and checkerboard backgrounds are stripped so you are comparing figures, not paper.
+
+Regenerate thumbs after new stills:
+
+```
+python3 -m venv /tmp/waloyo-proof && /tmp/waloyo-proof/bin/pip install pillow
+/tmp/waloyo-proof/bin/python3 art/reference/size-proof/build_thumbs.py
+```
