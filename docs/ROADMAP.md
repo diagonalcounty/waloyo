@@ -11,6 +11,8 @@ Living brief: [issue #12](https://github.com/diagonalcounty/waloyo/issues/12).
 - Map cards onto that chapter ([issue #23](https://github.com/diagonalcounty/waloyo/issues/23)).
 - Dress the couple for that chapter.
 
+**Form (MVP):** not a Heliopoly-style board, not The Game of Life’s spinner. Closer to **Oregon Trail**: a dated path of weeks until the baby, stops that are people and prices, one column that works on a phone from day one. The Guild’s 3D city is out.
+
 **Exit:** a one-page chapter card we can build against.
 
 ## Phase 1 — MVP (ship)
