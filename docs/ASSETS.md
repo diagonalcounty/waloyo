@@ -1,6 +1,8 @@
 # Asset catalog and issues
 
-GitHub issues are the ledger. The table of what exists on disk is this folder plus [`art/reference/`](../art/reference/).
+GitHub issues are the ledger. Product direction is [issue #12](https://github.com/diagonalcounty/waloyo/issues/12) (chapters, not an Unciv catalog). The table of what exists on disk is this folder plus [`art/reference/`](../art/reference/).
+
+New art issues should be `art/chapter/<name>` or `art/couple/<view>`, not `art/unit/<Unciv name>`.
 
 ## File names
 

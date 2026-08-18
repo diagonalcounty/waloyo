@@ -1,45 +1,32 @@
 # Roadmap
 
-Waloyo is built **look first**, then screens, then rules. The research in [`RESEARCH.md`](../RESEARCH.md) still stands for the long-term engine. This file is the order of work.
+Waloyo ships **one playable chapter**, then adds chapters. It does not rebuild Civilization.
 
-## Phase A — Style and catalog (now)
+Living brief: [issue #12](https://github.com/diagonalcounty/waloyo/issues/12).
 
-- Lock a visual family on a handful of Unciv units (ancient starter set).
-- Write one brief language that can generate Unciv-sized stills and HQ masters from the same sentence.
-- Enumerate Unciv’s current objects (vanilla first) into issues, labeled by slot and era.
-- Keep Firaxis art and audio out of the tree.
+## Phase 0 — Brief the first chapter
 
-**Exit:** the ancient starter set is an agreed reference, and every later asset has a labeled issue.
+- Pick time, place, and the constraint (what makes wealth hard here).
+- Name the verbs (trade, prices, knowledge, institutions) so Williams / Hayek / Sowell are play, not a lecture.
+- Define success for that chapter (not a domination victory).
+- Dress the couple for that chapter.
 
-## Phase B — Unciv 2D pack
+**Exit:** a one-page chapter card we can build against.
 
-- Produce stills for Unciv’s existing functionality only (no stacking, no 3D, no square tiles).
-- Dual output per subject: Unciv slot (icon / portrait / hex sprite as required) + HQ master.
-- Terrain, rivers, and hex edges are Unciv-only; mark those issues `target:unciv`.
-- Ship as a permanent audiovisual Unciv mod the community can install.
+## Phase 1 — MVP (ship)
 
-**Exit:** a playable Unciv game that no longer looks like a placeholder, using only original art.
+- One chapter, playable end to end.
+- The couple on screen. Historical outfit. One map or situation.
+- A player can fail the chapter or navigate it.
 
-## Phase C — Waloyo screens
+**Exit:** something you can give a friend.
 
-- Mock the surfaces that change the game: map chrome, city (queue already good), **research queue**, civics, stack inspector.
-- Keep Civ IV information density; replace hover-only 2005 chrome.
-- HQ masters from Phase B are the illustration source.
+## Phase 2 — More chapters
 
-**Exit:** a clickable shell that feels like Waloyo, even if the numbers behind it are fake.
+- New outfit, new constraints, same people.
+- Reuse the chapter shell. Content, not a new engine.
 
-## Phase D — Rules and client
+## Parked
 
-- Square 8-direction map, stacks, Civ IV combat, cottage growth, five civic categories.
-- Unciv remains the checklist and playable oracle. Tessera / BtS remain oracles only.
-- Engine choice (Godot, web + native shell, or other) is made after the look and the key screens exist.
-
-**Exit:** a vertical slice veterans will call “that fight / that cottage felt like IV,” on an original board.
-
-## Later
-
-- Full promotion tree, religion, great people, navy/air, vassals, corporations.
-- Difficulty tables vs BtS.
-- App Store / Play / desktop under the Waloyo name.
-
-Full BtS fidelity is a multi-year product. Phases A–B are the increment that can ship without that engine.
+- Unciv audiovisual pack, hex icon lock, Civ IV combat/civics/cottages.
+- `RESEARCH.md` is archive only.

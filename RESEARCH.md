@@ -1,8 +1,14 @@
+# Archived: Civ-engine survey (not the product)
+
+**Status:** archived. Waloyo is a **chapter game** about wealth-generating principles and a recurring couple ([issue #12](https://github.com/diagonalcounty/waloyo/issues/12)). This file is the earlier Unciv / Tessera / Civ IV engine study. Do not treat it as the roadmap.
+
+---
+
 # Waloyo — Research: Adapting Unciv (or similar) to Civilization IV rules with square tiles
 
 **Codename:** Waloyo  
 **Date:** 2026-08-15  
-**Goal:** A modern, open-source, iPad-friendly implementation of Civilization IV–style gameplay (vanilla + Warlords + Beyond the Sword preferred).
+**Goal (superseded):** A modern, open-source, iPad-friendly implementation of Civilization IV–style gameplay (vanilla + Warlords + Beyond the Sword preferred).
 
 ---
 

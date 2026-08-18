@@ -1,6 +1,8 @@
 # Style (provisional)
 
-This is a **reference board**, not a frozen bible. The ancient starter set exists so the direction can be judged for a day or two before mass production.
+The **settler couple** is the face of the game. Other ancient stills (Warrior, Archer, Worker) are leftover experiments, not a unit roster.
+
+This is a **reference board**, not a frozen bible.
 
 ## Family
 
