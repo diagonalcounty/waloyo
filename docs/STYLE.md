@@ -35,6 +35,17 @@ All files under [`art/reference/units/ancient/`](../art/reference/units/ancient/
 
 Warrior is the lock. The others must sit next to it without looking like a different game.
 
+## Connection register (not the pack lock)
+
+Two later Settler fronts read as people you can connect with. Logged only as a **feeling note**, not a replacement for the parchment plate family.
+
+| File | Register |
+|---|---|
+| `settler-front-anime.jpg` | Cleaner line, slightly larger eyes, even fills, subtle smile on the woman. Anime-adjacent without cartoon stretch. |
+| `settler-front-painted.jpg` | Same couple and kit; more skin texture and painterly shade. |
+
+What landed: adult faces, a **small closed-mouth smile** on the woman (not a grin), transparent field, same hide-and-rope kit. Do not apply this register to Warrior/Archer/Worker unless a later decision says so.
+
 ## What to reject
 
 - Firaxis or wiki rips (including upscales).
