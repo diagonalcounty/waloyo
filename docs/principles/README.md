@@ -26,6 +26,7 @@ Every card answers:
 | File | Source |
 |---|---|
 | [hayek-use-of-knowledge.md](hayek-use-of-knowledge.md) | Hayek, *The Use of Knowledge in Society* (1945) — [#20](https://github.com/diagonalcounty/waloyo/issues/20) |
+| [compassionate-self-interest.md](compassionate-self-interest.md) | Player stance in a living economy — [#24](https://github.com/diagonalcounty/waloyo/issues/24) |
 
 Playtest (HTML, not the game): [`prototypes/prices-as-signals/index.html`](../../prototypes/prices-as-signals/index.html) — card `hayek-prices-as-signals`.
 
