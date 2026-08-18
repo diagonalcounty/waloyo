@@ -19,7 +19,7 @@ Wealth is how the household stays intact through that season without eating the 
 
 **Source:** Project. Kin to household economics, Hayek’s adaptation to change, stewardship.
 
-**Mechanism:** A two-worker household that spends like a two-worker household will break when it becomes one-plus-a-child. Surplus, a skill that still pays, and neighbors who will still trade with you are how care becomes possible. The child is the reason the trade has to *last*, not a decoration.
+**Mechanism:** A two-worker household that spends like a two-worker household will break when it becomes one-plus-a-child. Surplus, a skill that still pays, and neighbors who will still trade with you are how care becomes possible. The child is why the trade has to *last* — and why winning is **they inherit more than you started with**, not that you outrank the other stalls.
 
 **Player does:** Choose work and stores that still feed two (then three) when she is home with the infant. Prefer a deal the town will repeat without her hands on the cart.
 
@@ -40,6 +40,14 @@ Wealth is how the household stays intact through that season without eating the 
 
 The market-morning prototype had none of this. That is why it had no stakes.
 
+## Not a Guild dynasty
+
+*The Guild* is about a **dynasty of power**: offices, titles, bigger shops, climbing over other families.
+
+Waloyo is about a **family whose children hold more wealth than their parents** — tools, skill, a standing trade, a larder that outlasts a hard season. Not a seat on the council. The baby months away is the next generation, not an heir to a title.
+
+Same *social* shape (a household inside an economy). Different score.
+
 ## Production: not The Guild’s city
 
-*The Guild* is the right **social** model (a family inside an economy). It is the wrong **build**. A living 3D map with a town full of simulated people is token- and art-expensive. Waloyo should stage the same pressure on a **small 2D (or illustrated) place**: a market, a few neighbors, goods you can see. The baby’s due date is the Warcraft clock. The stall and the pot are the Settlers chain. The city does not have to walk around in 3D.
+A living 3D map with a town full of simulated people is token- and art-expensive. Waloyo should stage the same pressure on a **small 2D (or illustrated) place**: a market, a few neighbors, goods you can see. The baby’s due date is the clock. The stall and the pot are the chain. The city does not have to walk around in 3D.
