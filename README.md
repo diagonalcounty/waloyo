@@ -8,7 +8,7 @@ The public name is **Waloyo**. It is not Civilization. It does not ship Firaxis 
 
 **MVP:** one playable chapter. That is enough to ship.
 
-Product brief: [issue #12](https://github.com/diagonalcounty/waloyo/issues/12).
+Product brief: [issue #12](https://github.com/diagonalcounty/waloyo/issues/12). Principles research: [issue #14](https://github.com/diagonalcounty/waloyo/issues/14).
 
 ## What this is not
 

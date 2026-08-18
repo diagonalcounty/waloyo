@@ -6,9 +6,9 @@ Living brief: [issue #12](https://github.com/diagonalcounty/waloyo/issues/12).
 
 ## Phase 0 — Brief the first chapter
 
-- Pick time, place, and the constraint (what makes wealth hard here).
-- Name the verbs (trade, prices, knowledge, institutions) so Williams / Hayek / Sowell are play, not a lecture.
-- Define success for that chapter (not a domination victory).
+- Catalogue principles ([issue #14](https://github.com/diagonalcounty/waloyo/issues/14) and children) into **cards** with a player verb and a failure state.
+- Pick time, place, and the constraint ([issue #13](https://github.com/diagonalcounty/waloyo/issues/13)).
+- Map cards onto that chapter ([issue #23](https://github.com/diagonalcounty/waloyo/issues/23)).
 - Dress the couple for that chapter.
 
 **Exit:** a one-page chapter card we can build against.
