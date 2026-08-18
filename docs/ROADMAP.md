@@ -11,7 +11,7 @@ Living brief: [issue #12](https://github.com/diagonalcounty/waloyo/issues/12).
 - Map cards onto that chapter ([issue #23](https://github.com/diagonalcounty/waloyo/issues/23)).
 - Dress the couple for that chapter.
 
-**Form (MVP):** not a Heliopoly-style board, not The Game of Life’s spinner. Closer to **Oregon Trail**: a dated path of weeks until the baby, stops that are people and prices, one column that works on a phone from day one. Steal **Catan’s trades** (I have this, you have that) — not Catan’s hex race, robber, or victory points. The Guild’s 3D city is out.
+**Form (MVP):** personal premise (she is pregnant; weeks until the birth) on a **Catan-shaped rule set** — a few goods, production, trade, and recipes that turn goods into lasting household wealth. That is the complexity the story needs. Not The Game of Life’s spinner. Not a Heliopoly table you must see all at once. Phone-first: the *rules* can be Catan’s; the *table* does not have to be a hex island. Drop Catan’s 10 VP, longest road, and robber-as-the-fun. The Guild’s 3D city is out.
 
 **Exit:** a one-page chapter card we can build against.
 
