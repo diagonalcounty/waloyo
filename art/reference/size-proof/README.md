@@ -6,7 +6,7 @@ Open the **local** file in a browser at **100% zoom**:
 
 GitHub’s file view will not load the pictures.
 
-Each cell is a pre-cropped square on the **same dark field**. Pedia cells have more headroom; hex tokens are packed tighter. Parchment, peach, and checkerboard backgrounds are stripped so you are comparing figures, not paper.
+Each cell is a pre-cropped square on the **same light cream field** (`#f7f2e8`) so brown kit still reads at 32–100px. Pedia cells have more headroom; hex tokens are packed tighter.
 
 Regenerate thumbs after new stills:
 

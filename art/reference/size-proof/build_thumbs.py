@@ -12,8 +12,9 @@ SRC = Path("/Users/jacobroecker/code/waloyo/art/reference/size-proof/stills")
 OUT = Path("/Users/jacobroecker/code/waloyo/art/reference/size-proof/thumbs")
 OUT.mkdir(parents=True, exist_ok=True)
 
-# Common field: same dark hex well as the page, no parchment / peach / checker.
-FIELD = (42, 50, 36, 255)
+# Light field so earth-tone figures keep contrast at icon size.
+# Not parchment texture — a flat cream, same on every still.
+FIELD = (247, 242, 232, 255)
 
 STILLS = [
     "warrior-front.jpg",
