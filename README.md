@@ -29,6 +29,7 @@ Same couple, new outfits per chapter.
 README.md                 this file
 LICENSE                   MIT
 docs/ROADMAP.md           ship one chapter, then add chapters
+docs/principles/          wealth-principle cards (docs first, not code)
 docs/STYLE.md             art notes (couple first)
 docs/ASSETS.md            how we file art now
 art/reference/            stills (couple + earlier experiments)
@@ -40,6 +41,7 @@ RESEARCH.md               archived Civ-engine survey (not the product)
 | Doc | What it is |
 |---|---|
 | [docs/ROADMAP.md](docs/ROADMAP.md) | MVP chapter, then more |
+| [docs/principles/](docs/principles/) | Principle cards (research → later rules) |
 | [docs/STYLE.md](docs/STYLE.md) | Couple as through-line |
 | [docs/ASSETS.md](docs/ASSETS.md) | Art issue conventions |
 | [RESEARCH.md](RESEARCH.md) | Archived; Unciv/Tessera survey |

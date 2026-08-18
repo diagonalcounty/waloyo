@@ -1,0 +1,30 @@
+# Principle cards
+
+**This is documentation, not code.**
+
+Research lands here as **cards** — short, checkable notes. They are the source we use to invent chapter verbs. Nothing in `src/` (when that exists) should invent a wealth rule that is not on a card first.
+
+When a chapter is actually built, the cards that chapter uses may be copied into data (`data/principles/*.json` or similar). That is a later step. Do not start there.
+
+## Card shape
+
+Every card answers:
+
+| Field | Meaning |
+|---|---|
+| **Id** | Stable slug, e.g. `hayek-prices-as-signals` |
+| **Name** | Plain language |
+| **Source** | Who, which work |
+| **Mechanism** | Why this generates (or destroys) wealth |
+| **Player does** | A verb, not a quote |
+| **Player fails** | How surplus dies if they do the opposite |
+| **Chapters** | Where it might apply (`open` until #23) |
+| **Issue** | Research ticket |
+
+## Files
+
+| File | Source |
+|---|---|
+| [hayek-use-of-knowledge.md](hayek-use-of-knowledge.md) | Hayek, *The Use of Knowledge in Society* (1945) — [#20](https://github.com/diagonalcounty/waloyo/issues/20) |
+
+Parent track: [#14](https://github.com/diagonalcounty/waloyo/issues/14).
