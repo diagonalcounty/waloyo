@@ -27,4 +27,6 @@ Every card answers:
 |---|---|
 | [hayek-use-of-knowledge.md](hayek-use-of-knowledge.md) | Hayek, *The Use of Knowledge in Society* (1945) — [#20](https://github.com/diagonalcounty/waloyo/issues/20) |
 
+Playtest (HTML, not the game): [`prototypes/prices-as-signals/index.html`](../../prototypes/prices-as-signals/index.html) — card `hayek-prices-as-signals`.
+
 Parent track: [#14](https://github.com/diagonalcounty/waloyo/issues/14).

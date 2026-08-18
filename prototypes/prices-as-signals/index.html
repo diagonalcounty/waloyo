@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Waloyo — prices as news</title>
+  <style>
+    :root {
+      --paper: #f4ead6;
+      --ink: #2a2118;
+      --muted: #6b5a48;
+      --line: #c4b49a;
+      --btn: #3d3428;
+      --btn-hover: #5a4a38;
+      --good: #2f5d3a;
+      --bad: #8b3a2a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100dvh;
+      font: 18px/1.5 "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      background: #1c1814;
+      color: var(--ink);
+    }
+    main {
+      max-width: 38rem;
+      margin: 0 auto;
+      min-height: 100dvh;
+      background: var(--paper);
+      padding: 1.5rem 1.4rem 3rem;
+    }
+    .meta {
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+    }
+    img.couple {
+      display: block;
+      width: 100%;
+      max-width: 16rem;
+      margin: 0 auto 1.25rem;
+      border-radius: 4px;
+    }
+    h1 { font-size: 1.45rem; margin: 0 0 0.75rem; font-weight: 600; }
+    p { margin: 0 0 0.9rem; }
+    .status {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 0.55rem 0;
+      margin: 0 0 1.1rem;
+    }
+    .status strong { color: var(--ink); font-weight: 600; }
+    .choices { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1.1rem; }
+    button {
+      font: inherit;
+      text-align: left;
+      padding: 0.75rem 0.9rem;
+      border: 1px solid var(--line);
+      background: #fffaf0;
+      color: var(--ink);
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    button:hover { background: #fff; border-color: var(--btn); }
+    .end-good { border-left: 4px solid var(--good); padding-left: 0.85rem; }
+    .end-fail { border-left: 4px solid var(--bad); padding-left: 0.85rem; }
+    .card {
+      margin-top: 1.25rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    a { color: var(--btn); }
+    .again { margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="meta">Prototype · <code>hayek-prices-as-signals</code> · not a chapter yet</p>
+    <div id="app"></div>
+  </main>
+  <script>
+    const START = {
+      coin: 8,
+      grain: 2,
+      hides: 4,
+      path: "none",
+    };
+
+    let S = { ...START };
+
+    const scenes = {
+      market: {
+        img: true,
+        title: "Market morning",
+        text: [
+          "You two came down from the ridge with four hides and a week’s coin.",
+          "At the stall, grain is twice yesterday’s price. The seller shrugs. He does not know why. A neighbor says wait — the magistrate will post the reason at noon.",
+          "Hayek’s point is already on the table: you do not need the story. The price <em>is</em> the telegram.",
+        ],
+        choices: [
+          { label: "Sell two hides while they still buy, take only a little grain, eat roots tonight.", go: "adapt1", set: { path: "adapt" } },
+          { label: "Buy the usual sack. We always buy a sack on market day.", go: "ignore1", set: { path: "ignore" } },
+          { label: "Petition the magistrate to cap the price. This is unfair.", go: "cap1", set: { path: "cap" } },
+        ],
+      },
+      adapt1: {
+        title: "You treated the price as news",
+        apply: () => {
+          S.coin += 6;
+          S.hides -= 2;
+          S.grain += 1;
+        },
+        text: [
+          "Hides moved fast. You leave with more coin and less grain than habit would have bought. Supper will be thin.",
+          "A drover, already packed, offers day-wages to help shift cargo toward the high road. He will not say where the grain is going. He does not need to. Wages are up.",
+        ],
+        choices: [
+          { label: "Take the work. The wage is another price.", go: "adapt2" },
+          { label: "Sit on the coin and wait for grain to get cheap again.", go: "adaptWait" },
+        ],
+      },
+      adapt2: {
+        title: "You kept listening",
+        apply: () => { S.coin += 3; },
+        text: [
+          "By dusk you are sore and richer by three coins. You still do not know why grain jumped.",
+          "At sundown a rider finally brings the story: drought two valleys over. The magistrate posts it on the door. Everyone who waited for the door is late.",
+        ],
+        choices: [{ label: "See how you stand.", go: "endAdapt" }],
+      },
+      adaptWait: {
+        title: "You stopped at the first signal",
+        apply: () => { S.grain = Math.max(0, S.grain - 1); },
+        text: [
+          "Grain does not get cheap. It gets dearer. You spend the afternoon watching the stall.",
+          "The drought story arrives at sundown. You already knew the only useful part this morning: grain wanted more of you.",
+        ],
+        choices: [{ label: "See how you stand.", go: "endAdaptThin" }],
+      },
+      ignore1: {
+        title: "Habit over the telegram",
+        apply: () => {
+          S.coin -= 6;
+          S.grain += 2;
+          if (S.coin < 0) S.coin = 0;
+        },
+        text: [
+          "You buy the usual sack. The purse is almost empty. The seller looks surprised you did not even ask.",
+          "Noon comes. Still no posted reason. A woman offers to trade your last hides for seed, not flour — she is planting, not eating. She heard the price too.",
+        ],
+        choices: [
+          { label: "Trade the hides for seed. Late, but you are listening now.", go: "ignoreRecover" },
+          { label: "Keep the hides. We came for flour, not a lecture.", go: "endIgnore" },
+        ],
+      },
+      ignoreRecover: {
+        title: "Late, not lost",
+        apply: () => { S.hides = 0; S.grain += 1; },
+        text: [
+          "You will eat what you already bought and put seed in the ground. You paid the stupid tax this morning. You do not have to pay it twice.",
+          "At sundown the drought is posted. You already changed.",
+        ],
+        choices: [{ label: "See how you stand.", go: "endLate" }],
+      },
+      cap1: {
+        title: "The cap passes",
+        apply: () => { S.grain = 0; },
+        text: [
+          "The magistrate loves a crowd. He sets yesterday’s price. By mid-afternoon the stall is empty. Official grain: none. A boy in the alley has a sack at three times the old price, no questions.",
+          "You won the petition. The news still had to go somewhere. It went into the alley.",
+        ],
+        choices: [
+          { label: "Buy the alley sack. Swallow it.", go: "capBuy" },
+          { label: "Refuse. We wait for honest grain at the honest price.", go: "endCap" },
+        ],
+      },
+      capBuy: {
+        title: "The telegram, smuggled",
+        apply: () => {
+          S.coin = Math.max(0, S.coin - 7);
+          S.grain += 1;
+        },
+        text: [
+          "You have grain and almost no coin. The posted price is a lie you already paid to keep.",
+          "Sundown: drought, two valleys over. The alley knew first because the alley was still allowed to speak in prices.",
+        ],
+        choices: [{ label: "See how you stand.", go: "endCapPaid" }],
+      },
+      endAdapt: {
+        end: "good",
+        title: "You used the price",
+        text: [
+          "You never needed the drought story to act. Coin in the purse, a little grain, hides sold into demand. Thin supper. A household that can face next week.",
+          "That is the card: prices are news, compressed. Most people need only know that grain is dearer — not why.",
+        ],
+      },
+      endAdaptThin: {
+        end: "good",
+        title: "Half a listen",
+        text: [
+          "You heard the first price and then sat still. Better than habit, worse than staying awake. The drought posting did not feed you.",
+        ],
+      },
+      endLate: {
+        end: "good",
+        title: "You paid for a late education",
+        text: [
+          "Morning habit cost you. Afternoon trade saved a little. The lesson is ugly and useful: the price was already the briefing.",
+        ],
+      },
+      endIgnore: {
+        end: "fail",
+        title: "You waited for the story",
+        text: [
+          "You have flour for a few days, no coin, and hides nobody will pay last week’s price for. The magistrate’s notice is nailed up. It explains a fact you already purchased the hard way.",
+          "Failure on this card: ignore the price, keep producing and buying as before. Local knowledge never reaches you in time to matter.",
+        ],
+      },
+      endCap: {
+        end: "fail",
+        title: "The market went quiet",
+        text: [
+          "No grain at the legal price. You have principles and an empty pot. The drought is now public. So is the empty stall.",
+          "Failure on this card: freeze the price. The telegram is forbidden. The news still happens. It just stops arriving.",
+        ],
+      },
+      endCapPaid: {
+        end: "fail",
+        title: "You paid the cap twice",
+        text: [
+          "Once in the petition, once in the alley. You have a little grain and a story about fairness. Surplus went to whoever was still allowed to name a price.",
+        ],
+      },
+    };
+
+    function render(id) {
+      const scene = scenes[id];
+      if (scene.apply) scene.apply();
+      const app = document.getElementById("app");
+      const endClass = scene.end === "good" ? "end-good" : scene.end === "fail" ? "end-fail" : "";
+      const img = scene.img
+        ? `<img class="couple" src="couple.jpg" alt="The couple" />`
+        : "";
+      const body = scene.text.map((t) => `<p>${t}</p>`).join("");
+      const choices = scene.choices
+        ? `<div class="choices">${scene.choices
+            .map(
+              (c, i) =>
+                `<button type="button" data-go="${c.go}" data-i="${i}">${c.label}</button>`
+            )
+            .join("")}</div>`
+        : `<p class="again"><button type="button" data-go="restart">Play again</button></p>
+           <p class="card">Card: <code>hayek-prices-as-signals</code> · <a href="../../docs/principles/hayek-use-of-knowledge.md">source note</a></p>`;
+      app.innerHTML = `
+        ${img}
+        <h1 class="${endClass}">${scene.title}</h1>
+        <div class="status">
+          <span>Coin <strong>${S.coin}</strong></span>
+          <span>Grain <strong>${S.grain}</strong></span>
+          <span>Hides <strong>${S.hides}</strong></span>
+        </div>
+        ${body}
+        ${choices}
+      `;
+      app.querySelectorAll("button").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const go = btn.getAttribute("data-go");
+          if (go === "restart") {
+            S = { ...START };
+            render("market");
+            return;
+          }
+          const i = Number(btn.getAttribute("data-i"));
+          const choice = scene.choices && scene.choices[i];
+          if (choice && choice.set) Object.assign(S, choice.set);
+          render(go);
+        });
+      });
+    }
+
+    render("market");
+  </script>
+</body>
+</html>
