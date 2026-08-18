@@ -5,7 +5,9 @@ Stance: [compassionate-self-interest.md](compassionate-self-interest.md).
 
 The town is the field. The **pressure** is the other person.
 
-If you are playing the man, you already know a season is coming when she cannot stand at the stall the way she does now. She will bear a child and take primary responsibility for raising it. That is not a random event card. It is a **foreseeable labor shock**. Childrearing is work. What stalls is *market* work — walking, carrying, bargaining, a full day’s trade.
+**The game opens here:** she is already pregnant. The baby is a few months away. That is the clock. It is real, it is dated, and it is why the household has to act *now*.
+
+If you are playing the man, you know that when the child comes she will be stalled from market work — she bears the child and takes primary responsibility for raising it. That is not a random event card. It is a **foreseeable labor shock** you can see from the first screen. Childrearing is work. What stalls is *market* work — walking, carrying, bargaining, a full day’s trade.
 
 Wealth is how the household stays intact through that season without eating the neighbors or disappearing.
 
@@ -37,3 +39,7 @@ Wealth is how the household stays intact through that season without eating the 
 - The town still matters: a tanner’s wage, a standing customer, a stored sack — things that persist when one pair of hands is busy with the child.
 
 The market-morning prototype had none of this. That is why it had no stakes.
+
+## Production: not The Guild’s city
+
+*The Guild* is the right **social** model (a family inside an economy). It is the wrong **build**. A living 3D map with a town full of simulated people is token- and art-expensive. Waloyo should stage the same pressure on a **small 2D (or illustrated) place**: a market, a few neighbors, goods you can see. The baby’s due date is the Warcraft clock. The stall and the pot are the Settlers chain. The city does not have to walk around in 3D.
