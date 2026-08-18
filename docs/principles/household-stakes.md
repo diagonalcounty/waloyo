@@ -9,7 +9,7 @@ The town is the field. The **pressure** is the other person.
 
 If you are playing the man, you know that when the child comes she will be stalled from market work — she bears the child and takes primary responsibility for raising it. That is not a random event card. It is a **foreseeable labor shock** you can see from the first screen. Childrearing is work. What stalls is *market* work — walking, carrying, bargaining, a full day’s trade.
 
-Wealth is how the household stays intact through that season without eating the neighbors or disappearing.
+Wealth is how the household stays intact through that season without eating the neighbors or disappearing. **Wealth here is broad:** coin and stores, *and* the family itself — the marriage, the coming child, what they will know and hold. That matches how our economists use the word, not a ledger-only definition.
 
 ---
 
@@ -19,7 +19,7 @@ Wealth is how the household stays intact through that season without eating the 
 
 **Source:** Project. Kin to household economics, Hayek’s adaptation to change, stewardship.
 
-**Mechanism:** A two-worker household that spends like a two-worker household will break when it becomes one-plus-a-child. Surplus, a skill that still pays, and neighbors who will still trade with you are how care becomes possible. The child is why the trade has to *last* — and why winning is **they inherit more than you started with**, not that you outrank the other stalls.
+**Mechanism:** A two-worker household that spends like a two-worker household will break when it becomes one-plus-a-child. Surplus, a skill that still pays, and neighbors who will still trade with you are how care becomes possible. The child is why the trade has to *last* — and why winning is **they inherit more than you started with** (tools, a trade, *and* a household that held). Not a bigger purse alone, and not that you outrank the other stalls.
 
 **Player does:** Choose work and stores that still feed two (then three) when she is home with the infant. Prefer a deal the town will repeat without her hands on the cart.
 

@@ -2,6 +2,10 @@
 
 **This is documentation, not code.**
 
+## What “wealth” means here
+
+In the sources this catalogue uses (Sowell, Williams, Hayek, and kin), **wealth is not only coin and goods**. It includes **family and posterity**: skill, health, a standing household, a child who can start ahead of you. That is the project’s working definition. A score that only counts money is the narrower sense we are not using.
+
 Research lands here as **cards** — short, checkable notes. They are the source we use to invent chapter verbs. Nothing in `src/` (when that exists) should invent a wealth rule that is not on a card first.
 
 When a chapter is actually built, the cards that chapter uses may be copied into data (`data/principles/*.json` or similar). That is a later step. Do not start there.
