@@ -15,6 +15,19 @@ art/reference/<slot>/<era>/<unciv-name>-<view>.<ext>
 
 Reference stills (style board) stay under `art/reference/`. Unciv-ready packed atlases, when they exist, will live under `art/unciv/` and must follow [Unciv image paths](https://yairm210.github.io/Unciv/Modders/Images-and-Audio/).
 
+## Slots are different jobs
+
+A full-body plate can win as a Civilopedia entry and fail as a hex token. **Do not lock a style on the large still alone.** Judge each subject at the sizes in [`art/reference/size-proof/index.html`](../art/reference/size-proof/index.html) (open in a browser at 100% zoom).
+
+| Slot | Typical size | What must read |
+|---|---|---|
+| Civilopedia / city art | ~320px and up | Face, kit, story (Settler couple is allowed) |
+| `UnitPortraits` | 100–256px square | Costume + face |
+| `UnitIcons` | ~100px | Silhouette and weapon |
+| Hex / map sprite | ~32–64px | Shape only — couple, smile, and beads die here |
+
+One subject may need **two drawings**: a pedia plate and a simpler map token. That is a style decision, not a later export trick.
+
 ## Issue titles
 
 ```

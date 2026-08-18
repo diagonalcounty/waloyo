@@ -46,6 +46,18 @@ Two later Settler fronts read as people you can connect with. Logged only as a *
 
 What landed: adult faces, a **small closed-mouth smile** on the woman (not a grin), transparent field, same hide-and-rope kit. Do not apply this register to Warrior/Archer/Worker unless a later decision says so.
 
+Warrior extras (same folder, not the lock):
+
+| File | What it is |
+|---|---|
+| `warrior-front-anime.jpg` | Locked kit, anime-clean finish |
+| `warrior-front-mace.jpg` | Different man: stone mace, held shield |
+| `warrior-front-macuahuitl.jpg` | Nation unique, not generic Warrior |
+
+## Size before lock
+
+A still that works at 320px may fail at 64px. Open [`art/reference/size-proof/index.html`](../art/reference/size-proof/index.html) before calling a family locked. Civilopedia and hex tokens can be two drawings of the same unit.
+
 ## What to reject
 
 - Firaxis or wiki rips (including upscales).

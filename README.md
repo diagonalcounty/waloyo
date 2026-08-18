@@ -33,7 +33,7 @@ art/reference/            locked stills (style board, not Unciv-ready exports)
 
 Ink-line character illustration on a parchment field. Hide, rope, and knapped stone — not oil-painted reconstruction, not Noun Project icons.
 
-The ancient starter set (Warrior, Archer, Worker, Settler) lives in [`art/reference/units/ancient/`](art/reference/units/ancient/). Each unit has a **side** walk and a **front** walk. That set is a reference for judging the direction, not a finished tileset.
+The ancient starter set (Warrior, Archer, Worker, Settler) lives in [`art/reference/units/ancient/`](art/reference/units/ancient/). Each unit has a **side** walk and a **front** walk. Variants and a [size proof](art/reference/size-proof/index.html) sit beside them. That set is a reference for judging the direction, not a finished tileset. Judge icons at 100px and hex tokens at 32–64px — a Civilopedia plate is a different job.
 
 See [docs/STYLE.md](docs/STYLE.md).
 

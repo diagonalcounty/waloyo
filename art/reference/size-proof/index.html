@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Waloyo — size proof</title>
+  <style>
+    :root {
+      --bg: #1c2018;
+      --hex: #2a3224;
+      --ink: #e8e2d2;
+      --muted: #9aa18a;
+      --accent: #d4a24c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.45 "SF Pro Text", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      padding: 24px 20px 64px;
+    }
+    h1 { font-size: 1.25rem; font-weight: 600; margin: 0 0 8px; }
+    p { max-width: 62rem; color: var(--muted); margin: 0 0 1.25rem; }
+    p strong { color: var(--ink); }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: 10px 12px; vertical-align: middle; text-align: left; }
+    th { font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    tr + tr td { border-top: 1px solid #3a4234; }
+    .name { width: 11rem; color: var(--accent); font-weight: 600; }
+    .well {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--hex);
+      border: 1px solid #445038;
+    }
+    .well img {
+      display: block;
+      object-fit: cover;
+      object-position: top center;
+    }
+    .pedia img { width: 320px; height: 320px; }
+    .portrait img { width: 256px; height: 256px; }
+    .icon img { width: 100px; height: 100px; }
+    .hex64 img { width: 64px; height: 64px; }
+    .hex32 img { width: 32px; height: 32px; }
+    .hex64 .well, .hex32 .well { border-radius: 50%; overflow: hidden; }
+    caption { caption-side: bottom; text-align: left; color: var(--muted); font-size: 13px; padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Size proof — same still, Unciv-ish slots</h1>
+  <p>
+    Open this file in a browser at <strong>100% zoom</strong>. These are CSS pixels, not a running Unciv map.
+    <strong>Pedia 320</strong> is a Civilopedia / city-screen plate.
+    <strong>Portrait 256</strong> is Unciv’s portrait slot.
+    <strong>Icon 100</strong> is a unit icon.
+    <strong>Hex 64 / 32</strong> is roughly a unit on the board (circled to mimic a token).
+    If a face dies at 64, that still is a pedia asset, not a map asset.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Still</th>
+        <th>Pedia 320</th>
+        <th>Portrait 256</th>
+        <th>Icon 100</th>
+        <th>Hex 64</th>
+        <th>Hex 32</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="name">Warrior lock</td>
+        <td class="pedia"><span class="well"><img src="../units/ancient/warrior-front.jpg" alt="Warrior lock 320" /></span></td>
+        <td class="portrait"><span class="well"><img src="../units/ancient/warrior-front.jpg" alt="Warrior lock 256" /></span></td>
+        <td class="icon"><span class="well"><img src="../units/ancient/warrior-front.jpg" alt="Warrior lock 100" /></span></td>
+        <td class="hex64"><span class="well"><img src="../units/ancient/warrior-front.jpg" alt="Warrior lock 64" /></span></td>
+        <td class="hex32"><span class="well"><img src="../units/ancient/warrior-front.jpg" alt="Warrior lock 32" /></span></td>
+      </tr>
+      <tr>
+        <td class="name">Warrior anime</td>
+        <td class="pedia"><span class="well"><img src="../units/ancient/warrior-front-anime.jpg" alt="Warrior anime 320" /></span></td>
+        <td class="portrait"><span class="well"><img src="../units/ancient/warrior-front-anime.jpg" alt="Warrior anime 256" /></span></td>
+        <td class="icon"><span class="well"><img src="../units/ancient/warrior-front-anime.jpg" alt="Warrior anime 100" /></span></td>
+        <td class="hex64"><span class="well"><img src="../units/ancient/warrior-front-anime.jpg" alt="Warrior anime 64" /></span></td>
+        <td class="hex32"><span class="well"><img src="../units/ancient/warrior-front-anime.jpg" alt="Warrior anime 32" /></span></td>
+      </tr>
+      <tr>
+        <td class="name">Warrior mace</td>
+        <td class="pedia"><span class="well"><img src="../units/ancient/warrior-front-mace.jpg" alt="Warrior mace 320" /></span></td>
+        <td class="portrait"><span class="well"><img src="../units/ancient/warrior-front-mace.jpg" alt="Warrior mace 256" /></span></td>
+        <td class="icon"><span class="well"><img src="../units/ancient/warrior-front-mace.jpg" alt="Warrior mace 100" /></span></td>
+        <td class="hex64"><span class="well"><img src="../units/ancient/warrior-front-mace.jpg" alt="Warrior mace 64" /></span></td>
+        <td class="hex32"><span class="well"><img src="../units/ancient/warrior-front-mace.jpg" alt="Warrior mace 32" /></span></td>
+      </tr>
+      <tr>
+        <td class="name">Macuahuitl unique</td>
+        <td class="pedia"><span class="well"><img src="../units/ancient/warrior-front-macuahuitl.jpg" alt="Macuahuitl 320" /></span></td>
+        <td class="portrait"><span class="well"><img src="../units/ancient/warrior-front-macuahuitl.jpg" alt="Macuahuitl 256" /></span></td>
+        <td class="icon"><span class="well"><img src="../units/ancient/warrior-front-macuahuitl.jpg" alt="Macuahuitl 100" /></span></td>
+        <td class="hex64"><span class="well"><img src="../units/ancient/warrior-front-macuahuitl.jpg" alt="Macuahuitl 64" /></span></td>
+        <td class="hex32"><span class="well"><img src="../units/ancient/warrior-front-macuahuitl.jpg" alt="Macuahuitl 32" /></span></td>
+      </tr>
+      <tr>
+        <td class="name">Settler lock</td>
+        <td class="pedia"><span class="well"><img src="../units/ancient/settler-front.jpg" alt="Settler lock 320" /></span></td>
+        <td class="portrait"><span class="well"><img src="../units/ancient/settler-front.jpg" alt="Settler lock 256" /></span></td>
+        <td class="icon"><span class="well"><img src="../units/ancient/settler-front.jpg" alt="Settler lock 100" /></span></td>
+        <td class="hex64"><span class="well"><img src="../units/ancient/settler-front.jpg" alt="Settler lock 64" /></span></td>
+        <td class="hex32"><span class="well"><img src="../units/ancient/settler-front.jpg" alt="Settler lock 32" /></span></td>
+      </tr>
+      <tr>
+        <td class="name">Settler anime</td>
+        <td class="pedia"><span class="well"><img src="../units/ancient/settler-front-anime.jpg" alt="Settler anime 320" /></span></td>
+        <td class="portrait"><span class="well"><img src="../units/ancient/settler-front-anime.jpg" alt="Settler anime 256" /></span></td>
+        <td class="icon"><span class="well"><img src="../units/ancient/settler-front-anime.jpg" alt="Settler anime 100" /></span></td>
+        <td class="hex64"><span class="well"><img src="../units/ancient/settler-front-anime.jpg" alt="Settler anime 64" /></span></td>
+        <td class="hex32"><span class="well"><img src="../units/ancient/settler-front-anime.jpg" alt="Settler anime 32" /></span></td>
+      </tr>
+    </tbody>
+    <caption>
+      Crop is <code>object-fit: cover</code> from the top, so heads stay in the square.
+      A couple will collapse to two brown blobs at 32px — that is expected, and why Settler may need a simpler hex sprite.
+    </caption>
+  </table>
+</body>
+</html>
